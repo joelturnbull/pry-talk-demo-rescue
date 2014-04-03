@@ -2,9 +2,10 @@
 # create a file bowling_game.rb 
 # write a class definition to it
 # class BowlingGame
+#
 # end
 
-klass = "BowlingGame"
+klass = ARGV[0]
 
 file = create_file_for_class(klass)
 write_class_definition(file,klass)
