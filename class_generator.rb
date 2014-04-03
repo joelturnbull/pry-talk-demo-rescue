@@ -1,4 +1,5 @@
 require 'pry'
+require 'active_support/inflector'
 
 # Given a class name like "BowlingGame"
 # Create a file bowling_game.rb 
@@ -8,7 +9,7 @@ require 'pry'
 # end
 
 def file_name_for_class(klass)
-  raise
+  "#{klass.underscore}.rb"
 end
 
 klass = ARGV[0]
