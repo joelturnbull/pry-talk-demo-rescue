@@ -12,6 +12,14 @@ def file_name_for_class(klass)
   "#{klass.underscore}.rb"
 end
 
+def class_definition_for_class(klass)
+  "class #{klass}\n\nend"
+end
+
+def create_class(file_name,class_definition)
+  raise
+end
+
 klass = ARGV[0]
 
 file_name = file_name_for_class(klass)
