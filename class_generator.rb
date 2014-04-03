@@ -7,6 +7,10 @@ require 'pry'
 #
 # end
 
+def file_name_for_class(klass)
+  raise
+end
+
 klass = ARGV[0]
 
 file_name = file_name_for_class(klass)
