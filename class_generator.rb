@@ -17,7 +17,7 @@ def class_definition_for_class(klass)
 end
 
 def create_class(file_name,class_definition)
-  raise
+  File.write(file_name,class_definition)
 end
 
 klass = ARGV[0]
