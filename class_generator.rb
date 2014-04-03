@@ -8,13 +8,13 @@ require 'active_support/inflector'
 #
 # end
 
-def create_file_for_class(klass)
-  file_name = "#{klass.underscore}.rb"
-  binding.pry
+def file_name_for_class(klass)
+  "#{klass.underscore}.rb"
 end
 
 klass = ARGV[0]
 
-file = create_file_for_class(klass)
-write_class_definition(file,klass)
+file_name = file_name_for_class(klass)
+class_definition = class_definition_for_class(klass)
+write_class_definition(file_name,class_definition)
 
