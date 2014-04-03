@@ -1,3 +1,5 @@
+require 'pry'
+
 # given a class name "BowlingGame"
 # create a file bowling_game.rb 
 # write a class definition to it
