@@ -7,6 +7,10 @@ require 'pry'
 #
 # end
 
+def create_file_for_class(klass)
+  binding.pry
+end
+
 klass = ARGV[0]
 
 file = create_file_for_class(klass)
